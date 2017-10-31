@@ -1,0 +1,70 @@
+@charset "utf-8";
+$w:777px;
+$box-width:555px;
+$wid:885;
+
+* {
+	margin:0;
+	padding:0;
+}
+@import "outer";
+
+@import "style.css";
+
+p{
+	@if ($wid>=100){
+		width:$wid#{px};
+	}@else {
+		width:($wid/5)#{px};
+	}
+}
+@for $var from 5 through 9{
+	.s-#{$var}{
+		margin:#{$var}px;
+	}
+}
+div{
+	width:$w/3;
+	height:666px;
+}
+.box{
+	width:$box_width/3;
+	.container {
+		width:$box-width/5;
+		background:{
+			color:#fff;
+			image:url('');
+			position: 0px 0px;
+			repeat:norepeat;
+		}
+	}
+	.link{
+		color:#ff0;
+		display:inline-block;
+		&:hover{
+			color:#f00;
+		}
+	}
+}
+@mixin test($width:500px,$height:300px){
+	width:$width;
+	height:$height;
+	border:1px solid;
+}
+.container2{
+	@include test;
+}
+.container{
+	@include test(999px,444px);
+	color:#fff;
+}
+.container3{
+	@extend .container;
+	font-size:14px;
+	font-weight:blod;
+}
+.box222{
+	width:488px;
+	height:50px;
+	background:#00f;
+}

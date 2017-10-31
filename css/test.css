@@ -1,0 +1,78 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  color: red;
+  width: 888px;
+  height: 999px;
+}
+
+p {
+  width: 885px;
+}
+
+.s-5 {
+  margin: 5px;
+}
+
+.s-6 {
+  margin: 6px;
+}
+
+.s-7 {
+  margin: 7px;
+}
+
+.s-8 {
+  margin: 8px;
+}
+
+.s-9 {
+  margin: 9px;
+}
+
+div {
+  width: 259px;
+  height: 666px;
+}
+
+.box {
+  width: 185px;
+}
+.box .container, .box .container3 {
+  width: 111px;
+  background-color: #fff;
+  background-image: url("");
+  background-position: 0px 0px;
+  background-repeat: norepeat;
+}
+.box .link {
+  color: #ff0;
+  display: inline-block;
+}
+.box .link:hover {
+  color: #f00;
+}
+
+.container2 {
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+}
+
+.container, .container3 {
+  width: 999px;
+  height: 444px;
+  border: 1px solid;
+  color: #fff;
+}
+
+.container3 {
+  font-size: 14px;
+  font-weight: blod;
+}
+
+/*# sourceMappingURL=test.css.map */
